@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.TriangleFragment">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:text="Điểm nằm trong tam giác không ?"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtReset"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="#E01818"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtTitle"
+        android:text="Nhấn vào đây để tạo lại tam giác"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/layoutInputPoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40sp"
+        android:orientation="vertical"
+        android:padding="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtReset">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/txt_bg"
+                android:paddingStart="5sp"
+                android:text="Điểm x : "
+                android:textSize="20sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtXx"
+                android:layout_width="70sp"
+                android:layout_height="35sp"
+                android:layout_marginStart="20sp"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/edt_bg"
+                android:hint="x"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtXy"
+                android:layout_width="70sp"
+                android:layout_height="35sp"
+                android:layout_marginStart="20sp"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/edt_bg"
+                android:hint="y"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/txt_bg"
+                android:paddingStart="5sp"
+                android:text="Điểm A : "
+                android:textSize="20sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtAx"
+                android:layout_width="70sp"
+                android:layout_height="35sp"
+                android:layout_marginStart="20sp"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/edt_bg"
+                android:hint="x"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtAy"
+                android:layout_width="70sp"
+                android:layout_height="35sp"
+                android:layout_marginStart="20sp"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/edt_bg"
+                android:hint="y"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/txt_bg"
+                android:paddingStart="5sp"
+                android:text="Điểm B : "
+                android:textSize="20sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtBx"
+                android:layout_width="70sp"
+                android:layout_height="35sp"
+                android:layout_marginStart="20sp"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/edt_bg"
+                android:hint="x"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtBy"
+                android:layout_width="70sp"
+                android:layout_height="35sp"
+                android:layout_marginStart="20sp"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/edt_bg"
+                android:hint="y"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/txt_bg"
+                android:paddingStart="5sp"
+                android:text="Điểm C : "
+                android:textSize="20sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtCx"
+                android:layout_width="70sp"
+                android:layout_height="35sp"
+                android:layout_marginStart="20sp"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/edt_bg"
+                android:hint="x"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtCy"
+                android:layout_width="70sp"
+                android:layout_height="35sp"
+                android:layout_marginStart="20sp"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/edt_bg"
+                android:hint="y"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCheck"
+        android:layout_width="100sp"
+        android:layout_height="40sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="250sp"
+        android:background="@drawable/btn_bg"
+        android:text="Kiểm tra"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/layoutInputPoint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

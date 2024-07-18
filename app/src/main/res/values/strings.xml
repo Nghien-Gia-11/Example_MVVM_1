@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Example_MVVM_1</string>
+    <string name="test1">Count Characters</string>
+    <string name="test2">Triangle</string>
+    <string name="test3">Profile</string>
+    <string name="test4">Triangle Touch</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

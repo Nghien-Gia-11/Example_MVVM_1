@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menuTest1"
+        android:icon="@drawable/count_characters"
+        android:title="@string/test1" />
+    <item
+        android:id="@+id/menuTest2"
+        android:icon="@drawable/triangle"
+        android:title="@string/test2" />
+    <item
+        android:id="@+id/menuTest3"
+        android:icon="@drawable/profile"
+        android:title="@string/test3" />
+    <item
+        android:icon="@drawable/triangle"
+        android:id="@+id/menuTest4"
+        android:title="@string/test4" />
+</menu>
