@@ -47,24 +47,61 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="40sp"
-                android:orientation="vertical">
+                android:layout_height="wrap_content">
 
-                <TextView
-                    android:id="@+id/txtFullName"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:textSize="21sp"
-                    android:textStyle="bold" />
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/avatar"
+                    app:civ_border_color="#FF000000"
+                    app:civ_border_width="2dp" />
 
-                <TextView
-                    android:id="@+id/txtPosition"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="10sp"
-                    android:textColor="#AB9090"
-                    android:textSize="20sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20sp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtFullName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtPosition"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10sp"
+                        android:textColor="#AB9090"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/line_bg" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:textSize="16sp"
+                            android:text="Hồ sơ nhân viên"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"/>
+                        <ImageButton
+                            android:layout_width="20dp"
+                            android:layout_weight="0"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/next"
+                            android:layout_height="20dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
             </LinearLayout>
 
             <TextView
@@ -75,15 +112,32 @@
             <ProgressBar
                 android:id="@+id/progressViewHistory"
                 android:layout_width="wrap_content"
-                android:layout_marginTop="10sp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center" />
+                android:layout_gravity="center"
+                android:layout_marginTop="10sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Ví GHTKPay"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_height="match_parent"/>
 
+                <ImageButton
+                    android:layout_width="20dp"
+                    android:layout_weight="0"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/next"
+                    android:layout_height="20dp"/>
+            </LinearLayout>
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/viewHistory"
-                android:layout_marginTop="10sp"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:layout_marginTop="10sp" />
         </LinearLayout>
 
     </ScrollView>

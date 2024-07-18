@@ -30,8 +30,9 @@ class ProfileViewModel(application: Application) : AndroidViewModel(application)
                 val bufferedReader = BufferedReader(InputStreamReader(inputStream))
                 val stringBuilder = StringBuilder()
                 bufferedReader.forEachLine { line ->
-                    stringBuilder.append(line)
+                    stringBuilder.append(line) // thêm từng dòng vào stringBuilder
                 }
+                // convert từ string -> json
                 _profile.value = Gson().fromJson(stringBuilder.toString(), Profile::class.java)
             } catch (e: Exception) {
                 e.printStackTrace()

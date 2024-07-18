@@ -67,6 +67,7 @@ class TriangleFragment : Fragment() {
         }
     }
 
+    // lấy tọa độ các đỉnh của tam giác và điểm cần xác định
     private fun getPoint() {
         lsPoint.clear()
         val x = Point(
@@ -91,6 +92,7 @@ class TriangleFragment : Fragment() {
         viewModel.getResult(x, lsPoint)
     }
 
+    // kiểm tra xem người dùng đã nhập đủ các edittext chưa
     private fun checkTextFilled(edts: List<EditText>): Boolean {
         for (edt in edts) {
             if (edt.text.toString().isEmpty()) {

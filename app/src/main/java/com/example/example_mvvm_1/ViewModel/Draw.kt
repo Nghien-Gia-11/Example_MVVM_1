@@ -43,6 +43,7 @@ class Draw @JvmOverloads constructor(
             Log.e("TAG", "${point.x} ${point.y}")
             canvas.drawCircle(point.x.toFloat(), point.y.toFloat(), 15f, paint)
         }
+        // vẽ thành tam giác
         for (i in touchPointsTriangle.indices) {
             var next = i + 1
             if (next == touchPointsTriangle.size) {
@@ -56,9 +57,9 @@ class Draw @JvmOverloads constructor(
                 paint
             )
         }
+        // vẽ điểm cần xác định
         touchPoint.let {
             canvas.drawCircle(touchPoint.x.toFloat(), touchPoint.y.toFloat(), 15f, paint)
-
         }
     }
 
